@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Bola Memantul</title>
+  <style>
+    body {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .bola {
+      width: 60px;
+      height: 60px;
+      background-color: #ff3e3e;
+      border-radius: 50%;
+      animation: pantul 1s ease-in-out infinite;
+    }
+
+    @keyframes pantul {
+      0%   { transform: translateY(0); }
+      50%  { transform: translateY(200px); }
+      100% { transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="bola"></div>
+</body>
+</html>
